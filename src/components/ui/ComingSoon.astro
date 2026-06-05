@@ -1,0 +1,13 @@
+---
+interface Props {
+  feature?: string;
+}
+
+const { feature } = Astro.props;
+---
+
+<div role="status" aria-label={feature ? `${feature} — coming soon` : 'Coming soon'}>
+  <p>🚧</p>
+  <h3>{feature ?? 'This feature'} is coming soon</h3>
+  <p>We're working on it. Check back shortly.</p>
+</div>
