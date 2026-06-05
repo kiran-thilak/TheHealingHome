@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand tokens — override in Phase 2 with client design values */
+  --color-brand-primary: oklch(50% 0.2 240);
+  --color-brand-secondary: oklch(70% 0.15 200);
+
+  /* Typography */
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+  --font-serif: ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}

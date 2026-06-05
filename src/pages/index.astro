@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Button from '@/components/ui/Button.astro';
+import NewsletterForm from '@/components/ui/NewsletterForm.astro';
+---
+
+<BaseLayout title="Home" description="The Healing Home — your sanctuary for healing and wellness.">
+  <section aria-labelledby="hero-heading">
+    <h1 id="hero-heading">Welcome to The Healing Home</h1>
+    <p>Your sanctuary for healing and wellness. [Hero copy — Phase 2]</p>
+    <Button href="/about">Learn More</Button>
+    <Button href="/contact" variant="outline">Get in Touch</Button>
+  </section>
+
+  <section aria-labelledby="features-heading">
+    <h2 id="features-heading">What We Offer</h2>
+    <p>[Features / services content — Phase 2]</p>
+  </section>
+
+  <section aria-labelledby="newsletter-heading">
+    <h2 id="newsletter-heading">Stay Connected</h2>
+    <p>Subscribe to our newsletter for updates, resources, and inspiration.</p>
+    <NewsletterForm />
+  </section>
+</BaseLayout>

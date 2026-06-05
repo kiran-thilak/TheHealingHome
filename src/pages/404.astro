@@ -1,0 +1,12 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Button from '@/components/ui/Button.astro';
+---
+
+<BaseLayout title="Page Not Found" description="The page you are looking for could not be found.">
+  <section aria-labelledby="not-found-heading">
+    <h1 id="not-found-heading">404 — Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved.</p>
+    <Button href="/">Return Home</Button>
+  </section>
+</BaseLayout>
