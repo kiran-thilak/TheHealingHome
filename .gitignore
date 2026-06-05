@@ -1,24 +1,50 @@
-# Astro
+# ── Build outputs ──────────────────────────────────────────────────────────────
 dist/
 .astro/
 
-# Node
+# ── Dependencies ───────────────────────────────────────────────────────────────
 node_modules/
-pnpm-debug.log*
+
+# ── Logs ───────────────────────────────────────────────────────────────────────
+*.log
+logs/
 npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# OS
+# ── Environment / secrets ──────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── TypeScript ─────────────────────────────────────────────────────────────────
+*.tsbuildinfo
+
+# ── Testing / coverage ─────────────────────────────────────────────────────────
+coverage/
+.nyc_output/
+
+# ── OS ─────────────────────────────────────────────────────────────────────────
 .DS_Store
+.DS_Store?
+._*
 Thumbs.db
+ehthumbs.db
+Desktop.ini
 
-# IDE
+# ── IDEs & editors ─────────────────────────────────────────────────────────────
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.project
+.classpath
+.settings/
 
-# Env
-.env
-.env.local
-.env.*.local
-
-# Vercel
+# ── Hosting ────────────────────────────────────────────────────────────────────
 .vercel/
+.netlify/
